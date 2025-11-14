@@ -32,7 +32,7 @@ Complete step-by-step guide to set up and run the project.
 ## Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/projecthub.git
+git clone https://github.com/bacosta30762/projecthub.git
 cd projecthub
 ```
 
