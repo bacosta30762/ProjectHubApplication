@@ -32,8 +32,8 @@ Complete step-by-step guide to set up and run the project.
 ## Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/Trabajo-Final-Aplicaciones-Web.git
-cd Trabajo-Final-Aplicaciones-Web
+git clone https://github.com/yourusername/projecthub.git
+cd projecthub
 ```
 
 ---
@@ -52,12 +52,12 @@ Execute the SQL script:
 
 ```sql
 -- Create database
-CREATE SCHEMA IF NOT EXISTS TrabajoFinal;
-USE TrabajoFinal;
+CREATE SCHEMA IF NOT EXISTS projecthub;
+USE projecthub;
 
 -- Create user
 CREATE USER IF NOT EXISTS 'admin01'@'%' IDENTIFIED BY 'admin01';
-GRANT ALL PRIVILEGES ON TrabajoFinal.* TO 'admin01'@'%';
+GRANT ALL PRIVILEGES ON projecthub.* TO 'admin01'@'%';
 FLUSH PRIVILEGES;
 
 -- Create proyectos table
@@ -116,7 +116,7 @@ Edit `ProyectoFinal/src/main/resources/application.properties`:
 
 ```properties
 # Database connection
-spring.datasource.url=jdbc:mysql://localhost:3306/trabajofinal?useTimezone=true&serverTimezone=UTC
+spring.datasource.url=jdbc:mysql://localhost:3306/projecthub?useTimezone=true&serverTimezone=UTC
 spring.datasource.username=admin01
 spring.datasource.password=admin01
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
@@ -266,7 +266,7 @@ java -jar TrabajoFinalAplicaciones-1.jar
 ### Option 1: Via Database
 
 ```sql
-USE TrabajoFinal;
+USE projecthub;
 
 -- Insert admin user (password: admin123 - BCrypt encoded)
 INSERT INTO usuario (username, password, nombre, apellidos, correo, telefono, activo) 

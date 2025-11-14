@@ -30,8 +30,8 @@ Thank you for your interest in contributing to this project! This document provi
 1. **Fork the Repository**
    ```bash
    # Click "Fork" on GitHub, then clone your fork
-   git clone https://github.com/your-username/Trabajo-Final-Aplicaciones-Web.git
-   cd Trabajo-Final-Aplicaciones-Web
+   git clone https://github.com/your-username/projecthub.git
+   cd projecthub
    ```
 
 2. **Set Up Development Environment**

@@ -1,6 +1,6 @@
-# Trabajo Final - Aplicaciones Web y Patrones
+# ProjectHub
 
-A comprehensive Spring Boot web application demonstrating modern web development patterns, security, internationalization, and reporting capabilities.
+A comprehensive Spring Boot web application for project management with user authentication, role-based access control, progress tracking, and reporting capabilities.
 
 ## 📋 Table of Contents
 
@@ -78,8 +78,8 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/Trabajo-Final-Aplicaciones-Web.git
-cd Trabajo-Final-Aplicaciones-Web
+git clone https://github.com/yourusername/projecthub.git
+cd projecthub
 ```
 
 ### 2. Database Setup
@@ -93,11 +93,11 @@ mysql -u root -p < BaseDatos_ProyectoFinal.sql
 Or manually execute the SQL commands in `BaseDatos_ProyectoFinal.sql`:
 
 ```sql
-CREATE SCHEMA TrabajoFinal;
-USE TrabajoFinal;
+CREATE SCHEMA projecthub;
+USE projecthub;
 
 CREATE USER 'admin01'@'%' IDENTIFIED BY 'admin01';
-GRANT ALL PRIVILEGES ON TrabajoFinal.* TO 'admin01'@'%';
+GRANT ALL PRIVILEGES ON projecthub.* TO 'admin01'@'%';
 
 CREATE TABLE proyectos (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -141,7 +141,7 @@ Edit `ProyectoFinal/src/main/resources/application.properties`:
 server.port=80
 
 # Database Configuration
-spring.datasource.url=jdbc:mysql://localhost:3306/trabajofinal?useTimezone=true&serverTimezone=UTC
+spring.datasource.url=jdbc:mysql://localhost:3306/projecthub?useTimezone=true&serverTimezone=UTC
 spring.datasource.username=admin01
 spring.datasource.password=admin01
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
@@ -177,7 +177,7 @@ mvn spring-boot:run
 #### Using IDE:
 
 1. Import the project as a Maven project
-2. Run `TrabajoFinalApplication.java`
+2. Run `TrabajoFinalApplication.java` (or `ProjectHubApplication.java` if renamed)
 3. The application will start on `http://localhost`
 
 ### 5. Access the Application
@@ -360,7 +360,7 @@ mvn test
 
 ## 📄 License
 
-This project is part of a final coursework assignment. See the repository for license details.
+This project is open source and available under the MIT License. See the repository for license details.
 
 ## 👤 Author
 
