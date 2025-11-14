@@ -78,7 +78,7 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/projecthub.git
+git clone https://github.com/bacosta30762/projecthub.git
 cd projecthub
 ```
 
